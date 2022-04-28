@@ -21,20 +21,20 @@
 
 POST /authenticate - get access token
 
-POST /registration/ - register new user
+POST /registration/ - register new user \
 POST /registration/admin - register admin
 
 PUT /users/edit/{userId} - change user role(role_user or role_admin)
 
-POST /bookings - create booking
-PUT /bookings/{bookingId} - extend booking duration
+POST /bookings - create booking \
+PUT /bookings/{bookingId} - extend booking duration\
 DELETE /bookings/{id} - cancel booking
 
-POST /cars/{userId} - add user's car
-DELETE /cars/{id} - delete car from db
+POST /cars/{userId} - add user's car\
+DELETE /cars/{id} - delete car from db\
 PUT /cars/status/{id} - update car status(requested -> approved)
 
-POST /spots - add spot
-GET /spots/free-spots - get all free spots for requested time period
-GET /spots/booked-spots - get all booked spots for requested time period
+POST /spots - add spot\
+GET /spots/free-spots - get all free spots for requested time period\
+GET /spots/booked-spots - get all booked spots for requested time period\
 DELETE /spots/{id} - delete spot
